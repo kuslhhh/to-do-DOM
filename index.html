@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-[#252323] text-white overflow-y-auto">
+        <div class="w-full max-w-md bg-[#C6AC8F] rounded-lg shadow-lg p-6 mt-16 mx-auto">
+            <h1 class="text-2xl font-bold text-center mb-6">Todo List</h1>
+            <div class="mb-4">
+                <div id="error-message" class="text-[#0A0908] font-bold text-center mb-4 hidden"></div>
+                <input 
+                    type="text"
+                    id="task-input"
+                    placeholder="Add a task"
+                    class="w-full p-3 rounded-lg bg-[#5E503F] text-white focus:outline-none focus:ring-2 focus:ring-black"
+                />
+                <button 
+                    id="task-btn"
+                    class="w-full mt-3 p-3 bg-[#242423] rounded-lg text-white font-bold hover:bg-black transition"
+                >
+                Add                
+                </button>
+            </div>
+            <div 
+                id="todo-parent"
+                class="space-y-3"
+            >
+                <div 
+                    id="todo-item-1"
+                    class="flex items-center justify-between bg-[#0A0908] p-3 rounded-lg"></div>
+            </div>
+        </div>
+        
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
