@@ -59,6 +59,8 @@ function checkItem(id) {
     renderTodos(todos);
 }
 
+
+// Render the todo list
 function renderTodos(todos) {
     parent.innerHTML = "";
     todos.forEach((todo) => {
